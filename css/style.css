@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: azure;
+    display: inline;
+    min-height: auto;
+    
+}
+.menu{
+    width: 60px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: violet;
+}
+.column{
+    width: 25%;
+    float:right;
+    padding: 2;
+    column-gap: 5px;
+
+}
+.row::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+@media screen and(max-width:600px) {
+    .column{
+        width: 100px;
+        display: block;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
+.card{
+    box-shadow: 0 4px 8px 0 black;
+    max-width: 500px;
+    
+    background-color: blue;
+    text-align: center;;
+    
+    border-radius: 30px;
+    padding-bottom :30px;
+    margin-right:5px ;
+    margin-top: 20px;
+
+}
+.title{
+    color:brown;
+    font-size: 10px;
+}
